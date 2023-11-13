@@ -1,0 +1,22 @@
+.square{
+    background: red;
+    color: whitesmoke;
+    width: 120px;
+    height: 120px;
+    font-size: 24px;
+    border: 4px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+.square1{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.square2{
+    background: green;
+    
+    margin: 5px 10px 15px 20px;
+}

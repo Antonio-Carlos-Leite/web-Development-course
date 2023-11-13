@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 06 forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>login</legend>
+            <section>
+                <label for="userEmail">Email:</label>
+                <input type="email" 
+                name="userEmail" 
+                id="userEmail" 
+                placeholder="Digite seu Email" 
+                required
+                />
+            </section>
+            <br>
+            <section>
+                <label for="userPassword">Senha:</label>
+                <input type="password" 
+                name="password" 
+                id="userPassword" 
+                placeholder="Digite sua Senha" 
+                required
+                />
+            </section>
+            <br>
+            <button type="submit">Logar</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+        <br>
+        <form>
+                <fieldset>
+                    <legend>Idade</legend>
+                    <input
+                        type="number"
+                        name="age"
+                        placeholder="Digite sua Idade"
+                        inputmode="numeric"
+                        min="16"
+                        minlength="2"
+                        max="75"
+                    >
+                    <br>
+                    <input 
+                        type="date"
+                        value="1992-12-25"
+                        name="born"
+                        
+                    >
+                    <br>
+                    
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        name="Volume"
+                        value="50"
+                        step="5"
+                        >
+                        <br>
+                        <button type="submit">Enviar</button>
+                        </fieldset>
+                     <br><br>
+            
+                        <input 
+                        type="file"
+                        accept="image/*"
+                        >
+                        <!--Crl + ; = comemtario 
+                            aceppt: ".doc"; ".pdf"; ".svg"; "image/*"; "audio/*"; "video/*" -->
+                        <br><br>
+                        <input type="color" name="FavoriteColor">
+                            <br><br>
+                        <section>
+                            <input type="checkbox" id="audio" name="audio" >
+                            <label for="audio">audio</label>
+                        </section>
+                        <section>
+                            <input type="checkbox" id="video" name="video" >
+                            <label for="video">video</label>
+                        </section>
+                        <section>
+                            <input type="checkbox" id="image" name="image" >
+                            <label for="image">image</label>
+                            <br><br>
+                        </section>
+                        <section>
+                            <input type="radio" id="yes" name="term" value="accept">
+                            <label for="yes">Sim</label>
+                            <br>
+                            <input type="radio" id="no" name="term" value="noAccept">
+                            <label for="no">Não</label>
+                        </section>
+                        <br><br>
+                        <select name="students" id="students" multiple>
+                            <option value="Antonio">Antonio</option>
+                            <option value="Carlos">Carlos</option>
+                            <option value="Carlos">Emanuel</option>
+                            <option value="Carlos">Jose</option>
+                        </select>
+                        <br><br>
+                        <textarea name="observation" 
+                        id="" 
+                        cols="30" 
+                        rows="10"
+                        maxlength="400"
+                        placeholder="Digite suas observações"
+                        ></textarea>
+
+
+                        <br><br>
+                        <button type="submit">Enviar</button>
+
+                </form>
+            </form>
+    </body>
+</html>
