@@ -2,7 +2,9 @@ const array = Array (1, "2", () => "A", [], {});
 
 console.log(array);
 console.log(array.length);
-console.log(array[2]());
+console.log(array[1]);
+console.log(array[2]); // declaration
+console.log(array[3]()); // execution
 
 const films = ["Se beber não case", "legalmente loira", "As branquelas", "American Pie"]
 console.log(films);
