@@ -9,7 +9,7 @@ console.log(array[3]()); // execution
 const films = ["Se beber não case", "legalmente loira", "As branquelas", "American Pie"]
 console.log(films);
 
-// LIFO add no final da pilha de prato
+// LIFO add no final da pilha de prato "P" de pilha
 films.push("Deu a louca na chapeuzinho");
 
 console.log(films);
