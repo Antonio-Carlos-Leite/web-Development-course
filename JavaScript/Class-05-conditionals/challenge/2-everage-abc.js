@@ -24,3 +24,9 @@ switch (true) {
     alert("Nota inválida. Digite uma nota entre 0 e 100")
         break;
 }
+
+if (media >=70) {
+    alert ("Aluno Aprovado");
+} else {
+    alert("Aluno Reprovado");
+}
