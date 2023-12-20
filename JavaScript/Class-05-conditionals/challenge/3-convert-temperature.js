@@ -40,7 +40,7 @@ function degreeConvert(degree) {
 
 };
 try {
-    const temperature = "10c";
+    const temperature = "100c";
     const covertedTemperature = degreeConvert(temperature);
 console.log(`${temperature} = ${covertedTemperature}`);
 } catch (error) {
