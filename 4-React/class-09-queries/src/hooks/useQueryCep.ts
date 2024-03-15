@@ -1,17 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
 
-async function getCep(cep: string) {
+async function getCep() {
 
-  // const data = await fetch(`https://cdn.apicep.com/file/apicep/${cep}.json`);
-  const data = await fetch("https://api.github.com/users/Antonio-Carlos-Leite");
-
+  // const data = await fetch(`https://cdn.apicep.com/file/apicep/63580-000.json`);
+  // const data = await fetch("https://api.github.com/users/Antonio-Carlos-Leite");
+  const data = await fetch("https://jsonplaceholder.typicode.com/users");
+  
   return  data.json();
 }
 
 export function useQueryCep() {
   const query = useQuery({
     queryKey: ["cep"],
-    queryFn: () => getCep("63580-000"),
+    queryFn: () => getCep(),
   });
   return query;
 }
